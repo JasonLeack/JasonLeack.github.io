@@ -1,7 +1,16 @@
 <html>
 	<head>
-		<title>Porfolio</title>
+		<!-- Meta section -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Riccardo Gelosa">
+		<meta name="keywords" content="Portfolio">
+		<meta name="description" content="Portfolio of Riccardo Gelosa (AKA Jason Leack on the internet)">
+		<!-- Links -->
 		<link rel="styleSheet" href="style.css">
+		<!-- Title -->
+		<title>Porfolio</title>
+		
 	</head>
 	<body>	
 		<nav>
@@ -12,16 +21,49 @@
 			</div>
 			<div class="navLinks">
 				<ul>
-					<li><a href="">Home</a></li>
-					<li><a href="">About me</a></li>
-					<li><a href="">Projects</a></li>
-					<li><a href="">Stuff</a></li>
+					<!--NavLinks -->
+					<li><a href="">
+						<span lang="en">Home</span>
+						<span lang="it">Home</span>
+					</a></li>
+					<li><a href="">
+						<span lang="en">About me</span>
+						<span lang="it">Informazioni</span>
+					</a></li>
+					<li><a href="">
+						<span lang="en">Projects</span>
+						<span lang="it">Progetti</span>
+					</a></li>
+					<li><a href="">
+						<span lang="en">Stuff</span>
+						<span lang="it">Roba</span>
+					</a></li>
+					<!-- Language -->
+					<select onchange="selectLanguage(this.options[this.selectedIndex].value)">
+						<option value="en" selected>English</option>
+						<option value="it">Italiano</option>
+					</select>
 				</ul>
 			</div>
-		</nav>
+		</nav><!-- 
 		<div class="main">
-			
+			<section class="banner">
+				
+			</section>
+		</div>Language -->
+		<div>
+		<button type="button" onclick="selectLanguage('it')">it</button>
 		</div>
+		<script>
+						function selectLanguage(language) {;
+						$("[lang]").each(function () {window.alert("language");
+						if ($(this).attr("lang") == language)
+							$(this).show();
+						else
+							$(this).hide();
+							});
+						}
+					</script>
 	</body>
 	
 </html>
