@@ -3,6 +3,27 @@
 	margin: 0;
 	padding: 0;
 	/*font-family: */
+	box-sizing: border-box;
+}
+
+nav
+{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	
+	padding-left: 0px;
+	padding-right: 50px;
+	
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	background: #333340;
+}
+
+section
+{
+	padding:100px;
 }
 
 .main
@@ -24,15 +45,6 @@
 	width: 150px;
 }
 
-nav
-{
-	position:sticky;
-	z-index: 1;
-	display: flex;
-	align-items: center;
-	background: #333340;
-}
-
 .navLinks
 {
 	flex: 1;
@@ -50,4 +62,98 @@ nav
 {
 	color: #ffffff;
 	text-decoration: none;
+}
+
+.home
+{
+	position: relative;
+	min-height: 100vh;
+	background: url(./Assets/Righteous.png);
+	background-size: cover;
+	background-position: right;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.home h2
+{
+	font-size: 3em;
+	color: #ffffff;
+	font-weight: 500;
+	line-height: 1.5em;
+}
+.home h2 span
+{
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+.home h3
+{
+	font-size: 1.5em;
+	color: #ffffff;
+	font-weight: 500;
+	line-height: 1.5em;
+}
+
+.navButton
+{
+	position: relative;
+	background: #2190f5;
+	display: inline-block;
+	color: #ffffff;
+	margin-top: 20px;
+	padding: 10px 30px;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: 500;
+}
+
+.heading
+{
+	width: 100%;
+	text-align: center;
+	font-size: 32px;
+	margin-bottom: 30px;
+	color: #111111
+}
+
+.content
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.contentBox h3
+{
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.halfDiv
+{
+	min-width: 50%;
+}
+
+.standardImage
+{
+	max-width: 100%;
+	margin-left: 100px;
+}
+
+.cvButton
+{
+	position: relative;
+	background: #f59021;
+	display: inline-block;
+	color: #ffffff;
+	margin-top: 20px;
+	padding: 10px 30px;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: 500;
 }
