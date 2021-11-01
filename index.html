@@ -10,6 +10,8 @@
 		<meta name="description" content="Portfolio of Riccardo Gelosa (AKA Jason Leack on the internet)">
 		<!-- Links -->
 		<link rel="styleSheet" href="style.css">
+		<!-- jQuery CDN -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<!-- Title -->
 		<title>Portfolio</title>
 	</head>
@@ -17,7 +19,7 @@
 	<body>	
 		<nav>
 			<div class="logo">
-				<a href="#home">
+				<a href="https://jasonleack.github.io/">
 					<img src="Assets/Logo.png">
 				</a>
 			</div>
@@ -80,7 +82,33 @@
 					<a href="./Files/CV_RiccardoGelosa_EN.pdf" class="cvButton" target="_blank">Read my CV</a>
 				</div>
 				<div class="halfDiv">
-					<img src="./assets/Darkwood Golem.png" class="standardImage">
+					<div class="skillsSection">
+						<h2>My experience</h2>
+						<h3>Back end</h3>
+						<div class="progressBar">
+							<div class="progressBarBG">
+								<div class="backEndBar"></div>
+							</div>
+						</div>
+						<h3>Front end</h3>
+						<div class="progressBar">
+							<div class="progressBarBG">
+								<div class="frontEndBar"></div>
+							</div>
+						</div>
+						<h3>Game design</h3>
+						<div class="progressBar">
+							<div class="progressBarBG">
+								<div class="gameDesignBar"></div>
+							</div>
+						</div>
+						<h3>Shaders</h3>
+						<div class="progressBar">
+							<div class="progressBarBG">
+								<div class="shadersBar"></div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -148,5 +176,7 @@
 				</div>
 			</div>
 		</section>
+		
+		<script src="./Scripts/ScrollView.js"> </script>
 	</body>
 </html>
