@@ -10,6 +10,7 @@
 		<meta name="description" content="Portfolio of Riccardo Gelosa (AKA Jason Leack on the internet)">
 		<!-- Links -->
 		<link rel="styleSheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Font Awesome by Dave Gandy - http://fontawesome.io-->
 		<!-- jQuery CDN -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<!-- Title -->
@@ -38,24 +39,13 @@
 				</ul>
 			</div>
 		</nav>
-		</header>
-		<script>
-			function selectLanguage(language) {;
-			$("[lang]").each(function () {window.alert("language");
-			if ($(this).attr("lang") == language)
-				$(this).show();
-			else
-				$(this).hide();
-				});
-			}
-		</script>
 		
 		<!-- Home section -->
 		<section class="home" id="home">
 			<div class="textBox">
 				<h2>Hello, I'm <br><span>Riccardo Gelosa</span></h2>
 				<h3>I'm an indie game developer</h3>
-				<a href="#aboutMe" class="navButton">About me</a>
+				<a href="#aboutMe" class="navButton"><span>About me</span></a>
 			</div>
 		</section>
 		
@@ -78,12 +68,14 @@
 						Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>
 						Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 					</p>
-					<a href="#projects" class="navButton">Projects</a>
-					<a href="./Files/CV_RiccardoGelosa_EN.pdf" class="cvButton" target="_blank">Read my CV</a>
+					<a href="#projects" class="navButton"><span>Projects</span></a>
+					<a href="./Files/CV_RiccardoGelosa_EN.pdf" class="cvButton" target="_blank"><span><i class="fa">&#xf1c1;</i> Read my CV</span></a>
 				</div>
 				<div class="halfDiv">
 					<div class="skillsSection">
-						<h2>My experience</h2>
+						<div class="contentBox">
+							<h2>My experience</h2>
+						</div>
 						<h3>Back end</h3>
 						<div class="progressBar">
 							<div class="progressBarBG">
@@ -107,6 +99,9 @@
 							<div class="progressBarBG">
 								<div class="shadersBar"></div>
 							</div>
+						</div>
+						<div class="contentBox">
+							<h2>Programming languages</h2>
 						</div>
 					</div>
 				</div>
@@ -160,7 +155,7 @@
 					<p>sddasadsdaiifspuip sad ssadsdsa asdd</p>
 				</div>
 			</div>
-			<a href="#contacts" class="navButton">Contacts</a>
+			<a href="#contacts" class="navButton"><span>Contacts</span></a>
 		</section>
 		
 		<!-- Contacts -->
