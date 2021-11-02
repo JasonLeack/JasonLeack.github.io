@@ -9,45 +9,53 @@
 		<meta name="keywords" content="Portfolio">
 		<meta name="description" content="Portfolio of Riccardo Gelosa (AKA Jason Leack on the internet)">
 		<!-- Links -->
-		<link rel="styleSheet" href="style.css">
+		<link rel="styleSheet" href="./Styles/GeneralStyle.css">
+		<link rel="styleSheet" href="./Styles/ButtonsStyle.css">
+		<link rel="styleSheet" href="./Styles/ProgressBarsStyle.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Font Awesome by Dave Gandy - http://fontawesome.io-->
 		<!-- jQuery CDN -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		
 		<!-- Title -->
 		<title>Portfolio</title>
 	</head>
 	<!-- Body -->
 	<body>	
-		<nav>
-			<div class="logo">
-				<a href="https://jasonleack.github.io/">
-					<img src="Assets/Logo.png">
-				</a>
-			</div>
-			<div class="navLinks">
-				<ul>
-					<!--NavLinks -->
-					<li><a href="#home">Home</a></li>
-					<li><a href="#aboutMe">About me</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#contacts">Contacts</a></li>
-					<!-- Language selection -->
-					<select onchange="selectLanguage(this.options[this.selectedIndex].value)">
-						<option value="en" selected>English</option>
-						<option value="it">Italian</option>
-					</select>
-				</ul>
-			</div>
-		</nav>
-		
-		<!-- Home section -->
-		<section class="home" id="home">
-			<div class="textBox">
-				<h2>Hello, I'm <br><span>Riccardo Gelosa</span></h2>
-				<h3>I'm an indie game developer</h3>
-				<a href="#aboutMe" class="navButton"><span>About me</span></a>
-			</div>
-		</section>
+		<!-- Header -->
+		<header id="navigation">
+			<!-- Navigation -->
+			<nav>
+				<div class="logo">
+					<a href="https://jasonleack.github.io/">
+						<img src="Assets/Logo.png">
+					</a>
+				</div>
+				<div class="navLinks">
+					<ul>
+						<!--NavLinks -->
+						<li><a href="#home">Home</a></li>
+						<li><a href="#aboutMe">About me</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#contacts">Contacts</a></li>
+						<!-- Language selection -->
+						<select onchange="selectLanguage(this.options[this.selectedIndex].value)">
+							<option value="en" selected>English</option>
+							<option value="it">Italian</option>
+						</select>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div class="main">
+			<!-- Home section -->
+			<section class="home" id="home">
+				<div class="textBox">
+					<h2>Hello, I'm <br><span>Riccardo Gelosa</span></h2>
+					<h3>I'm an indie game developer</h3>
+					<a href="#aboutMe" class="navButton"><span>About me</span></a>
+				</div>				
+			</section>
+		</div>
 		
 		<!-- About Me section -->
 		<section class="aboutMe" id="aboutMe">
@@ -169,9 +177,19 @@
 						My email goes here
 					</p>
 				</div>
+				<div class="emailFormBox">
+					<form>
+						<h3>Send me a message</h3>
+						<input type="text" name="" placeholder="Name">
+						<input type="email" name="" placeholder="Email">
+						<textarea placeholder="Your message"></textarea>
+						<input type="submit" value="send">
+					</form>
+				</div>
 			</div>
 		</section>
-		
+		<!-- Scripts -->
 		<script src="./Scripts/ScrollView.js"> </script>
+		<script src="./Scripts/StickHeader.js"> </script>
 	</body>
 </html>

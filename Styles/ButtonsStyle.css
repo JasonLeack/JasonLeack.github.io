@@ -1,0 +1,87 @@
+.navButton
+{
+	background: #2190f5;
+	display: inline-block;
+	color: #ffffff;
+	margin-top: 20px;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: 500;
+	
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	text-align:center;
+	transition: all 0.5s;
+}
+.navButton span
+{
+	display: inline-block;
+	transition: 0.5s;
+	position: relative;
+	text-align:center;
+}
+.navButton span:after
+{
+	content: '\2192';
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: 500;
+	position: absolute;
+	opacity: 0;
+	right: -35px;
+	transition: 0.5s;
+}
+.navButton:hover span
+{
+	padding-right: 25px;
+}
+.navButton:hover span:after
+{
+	opacity: 1;
+	right: 0;
+}
+
+.cvButton
+{
+	position: absolute;
+	background: #f59021;
+	display: inline-block;
+	color: #ffffff;
+	margin-left: 15px;
+	margin-top: 20px;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: 500;
+	
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	text-align:center;
+	transition: all 0.5s;
+}
+.cvButton span
+{
+	display: inline-block;
+	transition: 0.5s;
+	position: relative;
+	text-align:center;
+}
+.cvButton span:after
+{
+	font-size: 18px;
+}
+.cvButton:hover span
+{
+	font-size: 20px;
+}
+.cvButton:hover span:after
+{
+	font-size: 18px;
+}

@@ -1,0 +1,112 @@
+.progressBar
+{
+	padding-bottom: 15px;
+}
+
+.progressBarBG 
+{
+  width: 100%;
+  background-color: grey;
+}
+
+.backEndBar 
+{
+  width: 0%;
+  height: 3px;
+  background-color: #ff0000;
+}
+.backEndBar.animate
+{
+	animation-name: backEndAnim;
+	animation-duration: 0.75s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+.frontEndBar 
+{
+  width: 0%;
+  height: 3px;
+  background-color: #00ff00;
+}
+.frontEndBar.animate
+{
+	animation-name: frontEndAnim;
+  animation-duration: 0.85s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.gameDesignBar 
+{
+  width: 0%;
+  height: 3px;
+  background-color: #0000ff;
+}
+.gameDesignBar.animate
+{
+  animation-name: gameDesignAnim;
+  animation-duration: 0.75s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.shadersBar 
+{
+  width: 0%;
+  height: 3px;
+  background-color: #ff00ff;
+}
+.shadersBar.animate
+{
+  animation-name: shadersAnim;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+/* Keyframes */
+@keyframes backEndAnim{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 85%;
+	}
+}
+
+@keyframes frontEndAnim
+{
+	0%
+	{
+		width: 0%;
+	}
+	100%
+	{
+		width: 35%;
+	}
+}	
+
+@keyframes gameDesignAnim
+{
+	0%
+	{
+		width: 0%;
+	}
+	100%
+	{
+		width: 75%;
+	}
+}	
+
+@keyframes shadersAnim
+{
+	0%
+	{
+		width: 0%;
+	}
+	100%
+	{
+		width: 70%;
+	}
+}	
