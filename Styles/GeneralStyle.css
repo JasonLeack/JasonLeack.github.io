@@ -293,7 +293,7 @@ section
 		width: 100%;
 		height: 40px;
 		
-		background: url(../Assets/MenuToggle.png);
+		background: url(../Assets/T_MenuToggle.png);
 		background-position: right;
 		background-repeat: no-repeat;
 		background-size: 30px;
@@ -302,7 +302,7 @@ section
 	}
 	.menuToggle.active
 	{
-		background: url(../Assets/MenuClose.png);
+		background: url(../Assets/T_MenuClose.png);
 		background-position: right;
 		background-repeat: no-repeat;
 		background-size: 30px;
