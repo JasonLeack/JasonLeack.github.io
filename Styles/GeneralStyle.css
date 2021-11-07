@@ -103,6 +103,14 @@ section
 	color: #ffcc00;
 }
 
+.currentSelection
+{
+	text-decoration-line: underline;
+	text-decoration-style: solid;
+	text-decoration-color: #0033ff;
+	text-decoration-thickness: 5px;
+}
+
 .collapsibleHeader
 {
 	padding: 0 20px;

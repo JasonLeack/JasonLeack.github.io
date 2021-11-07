@@ -1,9 +1,4 @@
 var $window = $(window);
-var $backEndBar = $(".backEndBar")
-var $frontEndBar = $(".frontEndBar")
-var $gameDesignBar = $(".gameDesignBar")
-var $shadersBar = $(".shadersBar")
-
 
 function isScrolledIntoView($element, $window) 
 {
@@ -20,6 +15,11 @@ function isScrolledIntoView($element, $window)
 $(document).on("scroll", 
 	function () 
 	{
+		var $backEndBar = $(".backEndBar");
+		var $frontEndBar = $(".frontEndBar");
+		var $gameDesignBar = $(".gameDesignBar");
+		var $shadersBar = $(".shadersBar");
+
 		if (isScrolledIntoView($backEndBar, $window)) 
 		{
 			$backEndBar.addClass("animate");
@@ -36,5 +36,12 @@ $(document).on("scroll",
 		{
 			$shadersBar.addClass("animate");
 		}
+		
+		
+		document.querySelector('.homeButton').classList.toggle('currentSelection', isScrolledIntoView($(".home"), $window));
+		document.querySelector('.aboutMeButton').classList.toggle('currentSelection', isScrolledIntoView($(".aboutMe"), $window));
+		document.querySelector('.projectsButton').classList.toggle('currentSelection', isScrolledIntoView($(".projects"), $window));
+		document.querySelector('.contactButton').classList.toggle('currentSelection', isScrolledIntoView($(".contact"), $window));
+	
 	}
 );
