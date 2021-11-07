@@ -2,7 +2,7 @@
 {
 	margin: 0;
 	padding: 0;
-	/*font-family: */
+	font-family: Gudea, sans-serif;
 	box-sizing: border-box;
 	transition: 0.5s;
 }
@@ -17,7 +17,6 @@ header
 	z-index: 1000000;
 	position: fixed;
 	
-	display: flex;
 	
 	width: 100%;
 	padding-top: 15px;
@@ -102,6 +101,42 @@ section
 .navLinks ul li a:hover
 {
 	color: #ffcc00;
+}
+
+.collapsibleHeader
+{
+	padding: 0 20px;
+	max-height: 0;
+	overflow: hidden;
+	display: flex;
+	
+	transition: max-height 0.2s ease-out;
+}
+.collapsibleHeader h2
+{
+	font-size: 1.3em;
+	color:#0088a5;
+	font-weight: 900;
+	line-height: 1.5em;
+}
+.collapsibleHeader h3
+{
+	font-size: 1.3em;
+	color:#bbbbbb;
+	font-weight: 500;
+	line-height: 1.2em;
+	text-align: center;
+	line-height: 30px;
+}
+
+.cursor
+{
+	padding: 0 2px;
+	margin: 5px 10px;
+	background-color: #ffffff;
+	
+	animation: blink 1s steps(5, start) infinite;
+	-webkit-animation: blink 1s steps(5, start) infinite;
 }
 
 .home
@@ -247,6 +282,17 @@ section
 	letter-spacing: 2px;
 }
 
+/* Animation */
+@keyframes blink
+{
+	to { visibility: hidden; }
+}
+@-webkit-keyframes blink
+{
+	to { visibility: hidden; }
+}
+
+/* Responsive section*/
 @media (max-width: 900px)
 {
 	nav
@@ -279,7 +325,7 @@ section
 		background: #000000;
 		transition: 0.5s;
 		
-		border-top: 6vh solid rgba(0,0,0,0.2);
+		border-top: calc(6vh + 30px) solid rgba(0,0,0,0.2);
 	}
 	
 	.navLinks select

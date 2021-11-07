@@ -8,8 +8,11 @@ function stickNavigation()
 {
 	var $header = document.getElementById('navigation');
 	var $menuToggle = $('.menuToggle');
-		
-	$header.classList.toggle('sticky', $window.scrollTop()>0 || $menuToggle.hasClass('active'));
+	
+	var stick = $window.scrollTop()>0 || $menuToggle.hasClass('active');
+	
+	$header.classList.toggle('sticky', stick);
+	showCollapsible(stick);
 }
 
 /*Toggles the navigation menu*/
@@ -22,4 +25,19 @@ function toggleMenu()
 	menu.classList.toggle('active');
 	
 	stickNavigation();
+}
+
+/*Shows the collapsible part of the header*/
+function showCollapsible(show)
+{
+	collapsible = document.querySelector(".collapsibleHeader");
+	
+	if(show)
+	{
+		collapsible.style.maxHeight = "30px";
+	}
+	else
+	{
+		collapsible.style.maxHeight = null;
+	}
 }
