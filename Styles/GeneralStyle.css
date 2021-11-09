@@ -96,11 +96,13 @@ section
 	display: inline-block;
 	color: #ffffff;
 	text-decoration: none;
+	transition: 0.1s;
 }
 
 .navLinks ul li a:hover
 {
 	color: #ffcc00;
+	transition: 0.1s;
 }
 
 .currentSelection
