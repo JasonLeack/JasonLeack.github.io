@@ -34,11 +34,16 @@
 	<body>	
 		<!-- Header -->
 		<header id="navigation">
-		
+			<!-- Collapsible header -->
 			<div class="collapsibleHeader">
 				<h2>RICCARDO GELOSA</h2>
 				<div class="cursor"></div>
 				<h3>PROGRAMMER | GAME DESIGNER</h3>
+				<div class="socialMedia">
+					<a href="mailto:riccardo.gelosa@outlook.it" class="emailLink"><i class="fa fa-envelope-square"></i></a>
+					<a href="https://github.com/JasonLeack" target="blank" class="githubLink"><i class="fa fa-github-square"></i></a>
+					<a href="https://www.linkedin.com/in/riccardo-gelosa-684b75203/" target="blank" class="linkedinLink"><i class="fa fa-linkedin-square"></i></a>
+				</div>
 			</div>
 			
 			<!-- Navigation -->
@@ -187,20 +192,23 @@
 		<!-- Contacts -->
 		<section class="contact" id="contact">
 			<div class="heading">
-				<h2>Contact:</h2>
+				<h2>Contact me:</h2>
 			</div>
 			<div class="content">
 				<div class="contentBox">
 					<p>
-						My email goes here
+						<i class="fa fa-envelope"></i> Riccardo.Gelosa@Outlook.it<br>
+						<i class="fa fa-map-marker"></i> Carate Brianza, Italy<br>
+						<i class="fa fa-mobile"></i> +39 338 754 0333<br>
+						
 					</p>
 				</div>
 				<div class="emailFormBox">
-					<form>
+					<form action="mailto:riccardo.gelosa@outlook.it" method="post" enctype="text/plain">
 						<h3>Send me a message</h3>
-						<input type="text" name="" placeholder="Name">
-						<input type="email" name="" placeholder="Email">
-						<textarea placeholder="Your message"></textarea>
+						<input type="text" name="name" placeholder="Name">
+						<input type="email" name="mail" placeholder="Email">
+						<textarea name="message" placeholder="Your message"></textarea>
 						<input type="submit" value="send">
 					</form>
 				</div>

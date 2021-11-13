@@ -149,6 +149,40 @@ section
 	-webkit-animation: blink 1s steps(5, start) infinite;
 }
 
+.socialMedia
+{
+	margin-left: auto;
+	margin-right: 0;
+	margin-top: auto;
+	margin-bottom: 0;
+}
+
+.socialMedia a 
+{
+	font-size: 1.5em;
+	padding-left: 5px;
+	color: #ffffff;
+}
+.socialMedia a :hover
+{
+	transition: 0.25s;
+}
+
+.emailLink :hover
+{
+	color: #768A0E;
+}
+
+.githubLink :hover
+{
+	color: #0E0E0E;
+}
+
+.linkedinLink :hover
+{
+	color: #0E768A;
+}
+	
 .home
 {
 	background: url(../Assets/Righteous.png);
