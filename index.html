@@ -17,7 +17,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		
 		<!-- Title -->
-		<title>Portfolio</title>
+		<title>Riccardo Gelosa | Portfolio</title>
 		
 		<!-- Favicon - Generic -->
 		<link rel="icon" href="./Assets/T_Icon_B_32x32.png" sizes="32x32">
@@ -196,12 +196,24 @@
 			</div>
 			<div class="content">
 				<div class="contentBox">
-					<p>
-						<i class="fa fa-envelope"></i> Riccardo.Gelosa@Outlook.it<br>
-						<i class="fa fa-map-marker"></i> Carate Brianza, Italy<br>
-						<i class="fa fa-mobile"></i> +39 338 754 0333<br>
-						
-					</p>
+					<address>
+						<div class="tooltip">
+							<button class="invButton" onClick="copyToClipboard('Riccardo.Gelosa@Outlook.it')"><i class="fa fa-envelope"></i> Riccardo.Gelosa@Outlook.it</button>
+							<span class="tooltipText"><button class="invButton" onClick="copyToClipboard('Riccardo.Gelosa@Outlook.it')">Click to copy</button></span>
+						</div><br>
+						<a href="https://www.google.com/maps/place/20841+Carate+Brianza+MB/@45.6695648,4.7547756,6z/data=!4m5!3m4!1s0x4786bcba5b48e56b:0xdf7d47612d66dca!8m2!3d45.6765522!4d9.2367432" target="blank">
+							<i class="fa fa-map-marker"></i> Carate Brianza (MB), Lombardy, Italy
+						</a><br>
+						<a href="tel:+393387540333">
+							<i class="fa fa-mobile"></i> +39 338 754 0333
+						</a><br>
+						<a href="https://wa.me/393387540333" target="blank">
+							<i class="fa fa-whatsapp"></i>
+						</a>
+						<a href="https://telegram.me/JasonLeack" target="blank">
+							<i class="fa fa-telegram"></i>
+						</a>
+					</address>
 				</div>
 				<div class="emailFormBox">
 					<form action="mailto:riccardo.gelosa@outlook.it" method="post" enctype="text/plain">
@@ -214,8 +226,19 @@
 				</div>
 			</div>
 		</section>
+		
+		<!-- Footer -->
+		<footer>
+			<h3>Developed by Riccardo Gelosa</h3>
+			<p> 
+				V 0.1.0 | 2021
+			</p>
+			<i class="fa-solid fa-dice-d20"></i>
+		</footer>	
+		
 		<!-- Scripts -->
 		<script src="./Scripts/ScrollView.js"> </script>
 		<script src="./Scripts/StickHeader.js"> </script>
+		<script src="./Scripts/Utilities.js"></script>
 	</body>
 </html>
