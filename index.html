@@ -12,7 +12,9 @@
 		<link rel="styleSheet" href="./Styles/GeneralStyle.css">
 		<link rel="styleSheet" href="./Styles/ButtonsStyle.css">
 		<link rel="styleSheet" href="./Styles/ProgressBarsStyle.css">
+		<link rel="stylesheet" href="./Styles/ThemeSwitchStyle.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Font Awesome by Dave Gandy - http://fontawesome.io-->
+		
 		<!-- jQuery CDN -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		
@@ -69,9 +71,15 @@
 			</nav>
 		</header>
 		
-		<div class="themeButton" onclick="switchTheme()" title="Change theme color">
-			<i class="fa fa-adjust"></i>
+		
+		<!--Theme button-->
+		<div class="themeButton">
+			<label class="switch">
+				<input type="checkbox" checked onclick="switchTheme()">
+				<span class="slider round"><i class="fa fa-moon-o"></i><i class="fa fa-sun-o"></i></span>
+			</label>
 		</div>
+
 		
 		<!-- Home section -->
 		<section class="home" id="home">

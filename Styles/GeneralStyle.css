@@ -117,12 +117,13 @@ footer
 	z-index: 100000;
 	
 	color: var(--regularTextColor);
-	font-size: 2em;
+	font-size: 1.5em;
 }
 .themeButton :hover
 {
 	color: var(--themeColor);
 }
+
 .logo
 {
 	flex-basis: 20%;
