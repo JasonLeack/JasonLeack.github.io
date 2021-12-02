@@ -1,25 +1,25 @@
 :root
 {
-	--backgroundColor: #1D1D1D;
-	--middlegroundColor: #3D3D3D;
-	--foregroundColor: #AAAAAA;
+	--backgroundColor: #F1F1F1;
+	--middlegroundColor: #F8F8F8;
+	--foregroundColor: #FFFFFF;
 	--headerBackgroundColor: #003340;
 	
-	--regularTextColor: #F1F1F1;
+	--regularTextColor: #252525;
 	--faintTextColor: #0088a5;
-	--navLinksColor: #FFFFFF;
+	--navLinksColor: #F0F0F0;
 	
-	--themeColor: #000000;
+	--themeColor: #A1A1A1;
 	
 	/*Dark theme colors*/
-	--backgroundColor_dark: #F1F1F1;
-	--middlegroundColor_dark: #F8F8F8;
-	--foregroundColor_dark: #FFFFFF;
+	--backgroundColor_dark: #1D1D1D;
+	--middlegroundColor_dark: #3D3D3D;
+	--foregroundColor_dark: #AAAAAA;
 	--headerBackgroundColor_dark: #003340;
 	
-	--regularTextColor_dark: #1D1D1D;
+	--regularTextColor_dark: #F1F1F1;
 	--faintTextColor_dark: #0088a5;
-	--navLinksColor_dark: #D1D1D1;
+	--navLinksColor_dark: #F0F0F0;
 	
 	--themeColor_dark: #FFFFFF;
 }
@@ -30,7 +30,7 @@
 	padding: 0;
 	font-family: Gudea, sans-serif;
 	box-sizing: border-box;
-	transition: 0.5s;
+	transition: 0.3s;
 }
 
 html 
@@ -116,9 +116,6 @@ footer
 	right: 0.5%;
 	z-index: 100000;
 	
-	color: #D1D1D1;
-	font-size: 1.4em;
-	
 	animation-duration: 1s;
     animation-timing-function: ease;
     animation-name: popOut;
@@ -129,7 +126,10 @@ footer
 }
 .themeButton label span i
 {
-	padding: 6px 3px 5px 5px;
+	padding: 7px 3px 4px 6px;
+	
+	color: #D1D1D1;
+	font-size: 1.3em;
 }
 
 .logo
