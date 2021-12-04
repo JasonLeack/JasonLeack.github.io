@@ -11,6 +11,8 @@
 	
 	--themeColor: #A1A1A1;
 	
+	--homeBackground: url(./Assets/Background_light.png);
+	
 	/*Dark theme colors*/
 	--backgroundColor_dark: #1D1D1D;
 	--middlegroundColor_dark: #3D3D3D;
@@ -22,6 +24,8 @@
 	--navLinksColor_dark: #F0F0F0;
 	
 	--themeColor_dark: #FFFFFF;
+	
+	--homeBackground_dark: url(./Assets/Righteous.png);
 }
 
 *
@@ -126,7 +130,7 @@ footer
 }
 .themeButton label span i
 {
-	padding: 7px 3px 4px 6px;
+	padding: 7px 0px 4px 6px;
 	
 	color: #D1D1D1;
 	font-size: 1.3em;
@@ -246,7 +250,7 @@ footer
 	
 .home
 {
-	background: url(../Assets/Righteous.png);
+	background: url(../Assets/Background_light.png);
 	background-size: cover;
 	background-position: right;
 	display: flex;

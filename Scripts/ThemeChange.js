@@ -31,7 +31,7 @@ function setColors(firstName, secondName)
 
 function switchTheme()
 {
-	var colors = ['backgroundColor', 'middlegroundColor', 'foregroundColor', 'headerBackgroundColor', 'regularTextColor', 'faintTextColor', 'navLinksColor', 'themeColor'];
+	var colors = ['backgroundColor', 'middlegroundColor', 'foregroundColor', 'headerBackgroundColor', 'regularTextColor', 'faintTextColor', 'navLinksColor', 'themeColor', 'homeBackground'];
 	
 	for (let i = 0; i < colors.length; i++) 
 	{
@@ -48,6 +48,10 @@ function switchTheme()
 		{
 			sessionStorage.darkTheme = 1;
 		}
+		
+		var name = getComputedStyle(document.querySelector(':root')).getPropertyValue('--homeBackground');
+
+		document.getElementById("home").style.backgroundImage = name;
 	}
 }
 
