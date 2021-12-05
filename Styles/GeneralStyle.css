@@ -251,6 +251,7 @@ footer
 .home
 {
 	background: url(../Assets/Background_light.png);
+	background-color: var(--backgroundColor);
 	background-size: cover;
 	background-position: right;
 	display: flex;

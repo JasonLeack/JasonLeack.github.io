@@ -11,6 +11,18 @@ function isScrolledIntoView($element, $window)
 	return ((elementBottom <= viewBottom) && (elementTop >= viewTop));
 }
 
+function percentageOnScreen($element, $window)
+{
+		var viewTop = $window.scrollTop();
+		var viewBottom = viewTop + $window.height();
+		
+		var elementTop = $element.offset().top;
+		var elementBottom = elementTop + $element.height();
+		
+		var percentage = 0;
+		
+		return Math.min(100, Math.max((0, (viewTop + viewBottom - elementTop) / elementBottom)));
+}
 
 $(document).on("scroll", 
 	function () 
@@ -36,5 +48,12 @@ $(document).on("scroll",
 		{
 			$shadersBar.addClass("animate");
 		}	
+		
+		/*
+		var $home = $(".home");
+		
+		$home.setAttribute("opacity", percentageOnScreen($home, $window));
+		
+		/*window.alert(percentageOnScreen($home, $window));*/
 	}
 );
