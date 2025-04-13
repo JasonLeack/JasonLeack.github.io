@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="author" content="Riccardo Gelosa">
 		<meta name="keywords" content="Portfolio">
-		<meta name="description" content="Portfolio of Riccardo Gelosa (AKA Jason Leack on the internet)">
+		<meta name="description" content="Portfolio of Riccardo Gelosa">
 		<!-- Links -->
 		<link rel="styleSheet" href="./Styles/GeneralStyle.css">
 		<link rel="styleSheet" href="./Styles/ButtonsStyle.css">
@@ -34,45 +34,34 @@
 	
 	<!-- Body -->
 	<body>	
-		<!-- Header -->
-		<header id="navigation">
-			<!-- Collapsible header -->
-			<div class="collapsibleHeader">
-				<h2>RICCARDO GELOSA</h2>
-				<div class="cursor"></div>
-				<h3>PROGRAMMER | GAME DESIGNER</h3>
-				<div class="socialMedia">
-					<a href="mailto:riccardo.gelosa@outlook.it" class="emailLink"><i class="fas fa-envelope-square"></i></a>
-					<a href="https://github.com/JasonLeack" target="blank" class="githubLink"><i class="fab fa-github-square"></i></a>
-					<a href="https://www.linkedin.com/in/riccardo-gelosa-684b75203/" target="blank" class="linkedinLink"><i class="fab fa-linkedin"></i></a>
+		<!-------------- HEADER --------------->
+		<header class="horizontal-container"  style="justify-content: space-between;">
+			<!-- Title -->
+			<div class="horizontal-container">
+				<h1>RICCARDO GELOSA</h1>
+				<div id="headerButtons">
+					<a href="https://github.com/JasonLeack" target="blank" class="headerButton"><i class="fab fa-github-square"></i></a>
+					<a href="https://www.linkedin.com/in/riccardo-gelosa-684b75203/" target="blank" class="headerButton"><i class="fab fa-linkedin"></i></a>
+					<a href="mailto:riccardo.gelosa@outlook.it" class="headerButton"><i class="fas fa-envelope-square"></i></a>
 				</div>
 			</div>
 			
 			<!-- Navigation -->
 			<nav>
-				<div class="logo">
-					<a href="https://jasonleack.github.io/"><img src="Assets/T_Logo.png"></a>
-				</div>
-				<div class="menuToggle" onclick="toggleMenu()"></div>
-				<div class="navLinks">
-					<ul class="navMenu">
-						<!--NavLinks --> 
-						<li><a href="#home"><span class="homeButton">Home</span></a></li>
-						<li><a href="#aboutMe"><span class="aboutMeButton">About me</span></a></li>
-						<li><a href="#projects"><span class="projectsButton">Projects</span></a></li>
-						<li><a href="#contact"><span class="contactButton">Contact</span></a></li>
-						<!-- Language selection -->
-						<select onchange="selectLanguage(this.options[this.selectedIndex].value)">
-							<option value="en" selected>English</option>
-							<option value="it">Italian</option>
-						</select>
-					</ul>
-				</div>
+				<ul id="navigation">
+					<!--NavLinks --> 
+					<li><a href="#home" class="navigationButton">Home</a></li>
+					<li><a href="#professional" class="navigationButton">Professional</a></li>
+					<li><a href="#skills" class="navigationButton">Skills</a></li>
+					<li><a href="#projects" class="navigationButton">Projects</a></li>
+					<li><a href="#contact" class="navigationButton">Contact</a></li>
+				</ul>
 			</nav>
 		</header>
 		
 		
-		<!--Theme button-->
+		<!-------------- Theme button --------------> 
+		<!-- NOTE: TO BE MODIFIED! -->
 		<div class="themeButton">
 			<label class="switch">
 				<input type="checkbox" checked id="themeCheckbox" onclick="switchTheme()">
@@ -81,8 +70,8 @@
 		</div>
 
 		
-		<!-- Home section -->
-		<section class="home" id="home">
+		<!------------ HOME SECTION -------------->
+		<section id="home">
 			<div>
 				<h2>Hello, I'm <br><span>Riccardo Gelosa</span></h2>
 				<h3>I'm an indie game developer</h3>

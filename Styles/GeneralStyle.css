@@ -1,88 +1,140 @@
+/* --- VARIABLES -------------------------------------------------------------------------------------------- */
+
 :root
-{
-	--backgroundColor: #F1F1F1;
-	--middlegroundColor: #F8F8F8;
-	--foregroundColor: #FFFFFF;
-	--headerBackgroundColor: #003340;
+{	
+	--bodyColor_Background: #f1f1f1;
+	--bodyColor_Middleground: #F8F8F8;
+	--bodyColor_Foreground: #FFFFFF;
 	
-	--regularTextColor: #252525;
-	--faintTextColor: #0088a5;
-	--navLinksColor: #F0F0F0;
-	
-	--themeColor: #A1A1A1;
-	
-	--homeBackground: url(./Assets/Background_light.png);
-	
-	/*Dark theme colors*/
-	--backgroundColor_dark: #1D1D1D;
-	--middlegroundColor_dark: #3D3D3D;
-	--foregroundColor_dark: #AAAAAA;
-	--headerBackgroundColor_dark: #003340;
-	
-	--regularTextColor_dark: #F1F1F1;
-	--faintTextColor_dark: #0088a5;
-	--navLinksColor_dark: #F0F0F0;
-	
-	--themeColor_dark: #FFFFFF;
-	
-	--homeBackground_dark: url(./Assets/Righteous.png);
+	--textColor_Primary: #252525;
+	--textColor_Secondary: #595959;
+	--textColor_Light: #F0F0F0;
+
+	--themeColor_1: #1c3244;
+	--themeColor_2: #f2ba45;
+
+	--textSize_Small: clamp(0.8rem, 1.6vw, 1.1rem);
+	--textSize_Default: clamp(1rem, 2vw, 1.5rem);
+	--textSize_Big: clamp(1.2rem, 2.4vw, 1.8rem);
+
+	--titleSize_Small: clamp(1.3rem, 2.6vw, 2rem);
+	--titleSize_Default: clamp(1.5rem, 2.8vw, 2.25rem);
+	--titleSize_Big: clamp(1.7rem, 3vw, 2.5rem);
 }
 
-*
+/* Dark theme colors */
+
+.darkTheme
 {
+	--bodyColor_Background: #1D1D1D;
+	--bodyColor_Middleground: #3D3D3D;
+	--bodyColor_Foreground: #AAAAAA;
+	
+	--textColor_Primary: #F1F1F1;
+	--textColor_Secondary: #bfbfbf;
+	--textColor_Light: #F0F0F0;
+	
+	--themeColor_1: #1c3244;
+	--themeColor_2: #f2ba45;
+}
+
+/* --- STYLES -------------------------------------------------------------------------------------------- */
+
+*{
 	margin: 0;
 	padding: 0;
 	font-family: Gudea, sans-serif;
 	box-sizing: border-box;
 	transition: 0.3s;
-}
-
-html 
-{
 	scroll-behavior: smooth;
 }
 
-header
-{
+header{
+	background: var(--themeColor_1);
 	z-index: 1000000;
 	position: fixed;
-	
-	
+	padding: 0.7rem;
 	width: 100%;
-	padding-top: 15px;
-	transition: 0.4s;
-}
 
-header.sticky
-{
-	background: var(--headerBackgroundColor);
-	padding-top: 0px;
-	
 	box-shadow: 0 5px 10px rgba(0,0,0, 0.5);
 }
 
-nav
-{
-	top: 0;
-	
-	padding-left: 0px;
-	padding-right: 50px;
-	
-	justify-content: space-between;
-	align-items: center;
-	
-	display: flex;
-	height: 5vh;
-	width: 100vw;
-	
-	transition: 0.5s;
+header h1{
+	color: var(--themeColor_2);
+	font-size:var(--textSize_Big);
 }
 
-section
-{
-	padding:100px;
-	background-color: var(--backgroundColor);
+section{
+	padding:7rem;
+	height: 100vh;
+	background-color: var(--bodyColor_Background);
 }
+
+
+
+
+
+
+/* --- Classes ----------------------------------------------------------------------------------------------------- */
+
+.horizontal-container{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+.vertical-containe{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+/* --- Header --- */
+
+#headerButtons{
+	display: flex;
+	flex-direction: row;
+	margin-left: 1.5rem; 
+	justify-content: space-between; 
+	gap: 1rem;
+}
+
+.headerButton{
+	color: var(--textColor_Light);
+	font-size: var(--textSize_Big);
+}
+
+.headerButton :hover{
+	color: var(--themeColor_2);
+}
+
+/* --- Navigation --- */
+
+#navigation{
+    display: flex;
+	list-style: none;
+	gap: 1.2rem;
+}
+
+.navigationButton{
+	color: var(--textColor_Light);
+	text-decoration: none;
+	font-size:var(--textSize_Big);
+	transition: 0.1s;
+	font-weight: 500;
+}
+
+.navigationButton:hover{
+	color: var(--themeColor_2);
+	transition: 0.1s;
+}
+
+
+
+
+
+
+/* OLD OLD OLD OLD OLD OLD OLD OLD */
 
 address
 {
@@ -111,7 +163,7 @@ footer
 	color: #FFFFFF;
 }
 
-/* Classes */
+
 
 .themeButton
 {
@@ -135,131 +187,15 @@ footer
 	color: #D1D1D1;
 	font-size: 1.3em;
 }
-
-.logo
-{
-	flex-basis: 20%;
-}
-
-.logo img
-{
-	width: 150px;
-}
-
-.navLinks ul
-{
-	width: 100%;
-	display: flex;
-	position: relative;
-}
-
-.navLinks ul li
-{
-	position: relative;
-	list-style: none;
-	margin: 0 20px;
-	width: 100px;
 	
-	transition: 0.5s;
-}
-
-.navLinks ul li a
+#home
 {
-	position: relative;
-	display: inline-block;
-	color: var(--navLinksColor);
-	text-decoration: none;
-	transition: 0.1s;
-}
-
-.navLinks ul li a:hover
-{
-	color: #ffcc00;
-	transition: 0.1s;
-}
-
-.collapsibleHeader
-{
-	padding: 0 20px;
-	max-height: 0;
-	overflow: hidden;
-	display: flex;
-	
-	transition: max-height 0.2s ease-out;
-}
-.collapsibleHeader h2
-{
-	font-size: 1.3em;
-	color: var(--faintTextColor);
-	font-weight: 900;
-	line-height: 1.5em;
-}
-.collapsibleHeader h3
-{
-	font-size: 1.3em;
-	color:#bbbbbb;
-	font-weight: 500;
-	line-height: 1.2em;
-	text-align: center;
-	line-height: 30px;
-}
-
-.cursor
-{
-	padding: 0 2px;
-	margin: 5px 10px;
-	background-color: #ffffff;
-	
-	animation: blink 1s steps(5, start) infinite;
-	-webkit-animation: blink 1s steps(5, start) infinite;
-}
-
-.socialMedia
-{
-	margin-left: auto;
-	margin-right: 0;
-	margin-top: auto;
-	margin-bottom: 0;
-}
-
-.socialMedia a 
-{
-	font-size: 1.5em;
-	padding-left: 5px;
-	color: var(--navLinksColor);
-}
-.socialMedia a :hover
-{
-	transition: 0.25s;
-}
-
-.emailLink :hover
-{
-	color: #768A0E;
-}
-
-.githubLink :hover
-{
-	color: #0E0E0E;
-}
-
-.linkedinLink :hover
-{
-	color: #0E768A;
-}
-	
-.home
-{
-	background: url(../Assets/Background_light.png);
-	background-color: var(--backgroundColor);
-	background-size: cover;
-	background-position: right;
 	display: flex;
 	height: 100vh;
 	justify-content: space-between;
 	align-items: center;
 }
-.home h2
+#home h2
 {
 	font-size: 3em;
 	color: var(--regularTextColor);
@@ -339,14 +275,14 @@ footer
 {
 	position: relative;
 	min-height: 100vh;
-	background-color: var(--backgroundColor);
+	background-color: var(--bodyColor_Background);
 }
 
 .contacts
 {
 	position: relative;
 	min-height: 100vh;
-	background-color: var(--foregroundColor);
+	background-color: var(--bodyColor_Foreground);
 }
 
 .emailFormBox
@@ -373,7 +309,7 @@ footer
 	font-size: 16px;
 	border: none;
 	outline:none;
-	background: var(--middlegroundColor);
+	background: var(--bodyColor_Middleground);
 	color: var(--regularTextColor);
 }
 .emailFormBox form textarea
