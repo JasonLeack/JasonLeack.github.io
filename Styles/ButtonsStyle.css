@@ -1,44 +1,43 @@
-.navButton
-{
-	background: #2190f5;
-	display: inline-block;
-	color: #ffffff;
-	margin-top: 20px;
-	font-size: 18px;
+/* NAV BUTTON */
+.navButton{
+	display: flex;             
+	align-items: center;        
+	justify-content: center;   
+
+	background: var(--themeColor_1);
+	color: var(--textColor_Light);
+	font-size: var(--textSize_Big);
+
 	text-transform: uppercase;
 	text-decoration: none;
-	letter-spacing: 2px;
 	font-weight: 500;
 	
-	width: 200px;
-	height: 40px;
-	line-height: 40px;
-	text-align:center;
+	width: 17rem;
+	height: 4rem;
 	transition: all 0.5s;
 }
-.navButton span
-{
+.navButton span{
 	display: inline-block;
 	transition: 0.5s;
 	position: relative;
 	text-align:center;
 }
-.navButton span:after
-{
-	content: '\2192';
-	font-size: 18px;
+.navButton span:after{
+	content: '\203A';		/* › */
+	font-size: var(--textSize_Default);
 	text-transform: uppercase;
 	text-decoration: none;
-	letter-spacing: 2px;
 	font-weight: 500;
 	position: absolute;
+	top: 50%;
+ 	transform: translateY(-50%);
 	opacity: 0;
 	right: -35px;
 	transition: 0.5s;
 }
 .navButton:hover span
 {
-	padding-right: 25px;
+	padding-right: 2rem;
 }
 .navButton:hover span:after
 {
@@ -46,42 +45,38 @@
 	right: 0;
 }
 
+/* CV BUTTON */
+
 .cvButton
 {
-	position: absolute;
-	background: #f59021;
-	display: inline-block;
-	color: #ffffff;
-	margin-left: 15px;
-	margin-top: 20px;
-	font-size: 18px;
+	display: flex;             
+	align-items: center;        
+	justify-content: center;   
+
+	background: var(--themeColor_2);
+	color: var(--textColor_Light);
+	font-size: var(--textSize_Big);
+
 	text-transform: uppercase;
 	text-decoration: none;
-	letter-spacing: 2px;
 	font-weight: 500;
 	
-	width: 200px;
-	height: 40px;
-	line-height: 40px;
-	text-align:center;
+	width: 17rem;
+	height: 4rem;
 	transition: all 0.5s;
 }
 .cvButton span
 {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+
 	display: inline-block;
 	transition: 0.5s;
 	position: relative;
 	text-align:center;
 }
-.cvButton span:after
-{
-	font-size: 18px;
-}
+
 .cvButton:hover span
 {
-	font-size: 20px;
-}
-.cvButton:hover span:after
-{
-	font-size: 18px;
+	font-size: calc(var(--textSize_Big) * 1.1);
 }

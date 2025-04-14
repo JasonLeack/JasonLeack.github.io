@@ -1,0 +1,148 @@
+:root{
+    --lineThickness: 0.4rem;
+    --stepOffset: 3rem;
+    --stepSize: 4rem;
+    --arrowSize: 1rem;
+}
+
+.timeline{
+    position: relative;
+    width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+/* This draws the line*/
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: var(--lineThickness);
+    height: 100%;
+    background: var(--themeColor_1);
+    top: 0;
+    left: 50%;
+    margin-left: calc(var(--lineThickness)/-2);
+    z-index: 5;
+}
+
+/* Container */
+.timelineContainer{
+    padding: 0.6rem calc(var(--stepSize)/2 + var(--arrowSize) + var(--lineThickness));   /* Space between stemps | Space from central timeline */
+    position: relative;
+    width: 50%;
+}
+
+.left-container{
+    left: 0;
+}
+
+.right-container{
+    left: 50%;
+}
+
+.timelineContainer i{
+    position: absolute;
+
+    width: var(--stepSize);
+    height: var(--stepSize); 
+    line-height: var(--stepSize);
+    
+    text-align: center;
+    font-size: 2rem;
+
+    border-radius: 50%;
+    right: calc(var(--stepSize)/-2);
+    top: var(--stepOffset);
+    z-index: 10;
+    color: var(--themeColor_2);
+    background-color: var(--bodyColor_Foreground);
+    box-shadow: var(--themeColor_1) 0px 0px 0px var(--lineThickness);
+}
+
+.right-container i{
+    left: calc(var(--stepSize)/-2);
+}
+
+.left-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: calc(var(--stepOffset)/2 + var(--stepSize)/2);
+    z-index: 1;
+    border-top: var(--arrowSize) solid transparent;
+    border-bottom: var(--arrowSize) solid transparent;
+    border-left: var(--arrowSize) solid var(--bodyColor_Foreground);
+    right: calc(var(--arrowSize)*-1);
+}
+
+.right-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: calc(var(--stepOffset)/2 + var(--stepSize)/2);
+    z-index: 1;
+    border-top: var(--arrowSize) solid transparent;
+    border-bottom: var(--arrowSize) solid transparent;
+    border-right: var(--arrowSize) solid var(--bodyColor_Foreground);
+    left: calc(var(--arrowSize)*-1);
+}
+
+/* Step */
+.timelineStep{
+    padding: 1rem;
+    background: var(--bodyColor_Foreground);
+    position: relative;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.timelineStep:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px var(--themeColor_2);
+}
+
+.timelineStep h1{
+    font-size: var(--textSize_Big);
+    color: var(--textColor_Primary);
+}
+.timelineStep h2{
+    font-size: var(--textSize_Default);
+    color: var(--textColor_Primary);
+}
+.timeline small{
+    font-size: var(--textSize_Small);
+    color: var(--textColor_Secondary);
+}
+.timeline p{
+    font-size: var(--textSize_Default);
+    color: var(--textColor_Primary); 
+}
+
+.timelineStart{
+    padding: calc(var(--stepOffset)/2);
+    position: relative;
+}
+
+@media screen and (max-width: 1000px){
+    .timeline::after{
+        left: calc(var(--stepSize)/2);
+    }
+
+    .timelineContainer{
+        width: 100%;
+        padding-left: calc(var(--stepSize) + var(--lineThickness) + var(--arrowSize));
+        padding-right: 25px;
+    }
+    .timelineContainer i{
+        left: 0;
+    }
+    .right-container{
+        left: 0;
+    }
+    
+    .left-container-arrow, .right-container-arrow{
+        border-right: var(--arrowSize) solid var(--bodyColor_Foreground);
+        border-left: 0;
+        left: calc(var(--arrowSize)*-1);
+    }
+}

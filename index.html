@@ -11,9 +11,14 @@
 		<!-- Links -->
 		<link rel="styleSheet" href="./Styles/GeneralStyle.css">
 		<link rel="styleSheet" href="./Styles/ButtonsStyle.css">
+		<link rel="styleSheet" href="./Styles/TimelineStyle.css">
+		<link rel="styleSheet" href="./Styles/SkillsStyle.css">
 		<link rel="styleSheet" href="./Styles/ProgressBarsStyle.css">
 		<link rel="stylesheet" href="./Styles/ThemeSwitchStyle.css">
+		
+		<!-- Font Awesome-->
 		<script src="https://kit.fontawesome.com/30dfced7aa.js" crossorigin="anonymous"></script>
+		
 		
 		<!-- jQuery CDN -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -51,7 +56,7 @@
 				<ul id="navigation">
 					<!--NavLinks --> 
 					<li><a href="#home" class="navigationButton">Home</a></li>
-					<li><a href="#professional" class="navigationButton">Professional</a></li>
+					<li><a href="#experience" class="navigationButton">Experience</a></li>
 					<li><a href="#skills" class="navigationButton">Skills</a></li>
 					<li><a href="#projects" class="navigationButton">Projects</a></li>
 					<li><a href="#contact" class="navigationButton">Contact</a></li>
@@ -72,77 +77,136 @@
 		
 		<!------------ HOME SECTION -------------->
 		<section id="home">
-			<div>
-				<h2>Hello, I'm <br><span>Riccardo Gelosa</span></h2>
-				<h3>I'm an indie game developer</h3>
-				<a href="#aboutMe" class="navButton"><span>About me</span></a>
-			</div>			
+			<div class="halfDiv">
+				<p style="font-size: var(--titleSize_Big);">Hello, I'm <span style="color: var(--themeColor_2)">Riccardo</span>.</p>
+				<p style="font-size: var(--titleSize_Default);">I'm a software developer.</p>
+				<div style="margin: 1rem;"> </div>
+				<p>
+					I have experience in the industrial automation field, starting from making simulations of the inner workings of a plant to the
+					commissioning of the machine, whith all the supervision systems attached.<br>
+					I also have a passion for creating games and I enjoy tinkering and creating new projects that challenge my skill and understating.<br>
+				</p>
+
+				<div style="margin-top: 1rem;"></div>
+
+				<a href="#experience" class="navButton"><span>Experience</span></a>
+
+			</div>		
 			<div class="halfDiv">	
-				<img src="./Assets/Witch of the Curse.png" alt="Profile picture">
+				
 			</div>
 		</section>
 		
-		<!-- About Me section -->
-		<section class="aboutMe" id="aboutMe">
-			<div class="heading">
-				<h2>About Me:</h2>
-			</div>
-			<div class="content">
-				<div class="contentBox">
-					<h3>Who am I?</h3>
-					<p>
-						I'm Riccardo Gelosa, I'm an indie game developer. I've been Lead Game Designer
-						and Lead Programmer in small teams.
-						I studied Engineering of Automation at the Polytechnic of Milan and 
-						Information Technologies.
-						<br><br>
-						Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.<br>
-						Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. <br>
-						Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>
-						Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					<a href="#projects" class="navButton"><span>Projects</span></a>
-					<a href="./Files/CV_RiccardoGelosa_EN.pdf" class="cvButton" target="_blank"><span><i class="far fa-file-pdf"></i> Read my CV</span></a>
-				</div>
-				<div class="halfDiv">
-					<div class="skillsSection">
-						<div class="contentBox">
-							<h2>My experience</h2>
-						</div>
-						<h3>Back end</h3>
-						<div class="progressBar">
-							<div class="progressBarBG">
-								<div class="backEndBar"></div>
-							</div>
-						</div>
-						<h3>Front end</h3>
-						<div class="progressBar">
-							<div class="progressBarBG">
-								<div class="frontEndBar"></div>
-							</div>
-						</div>
-						<h3>Game design</h3>
-						<div class="progressBar">
-							<div class="progressBarBG">
-								<div class="gameDesignBar"></div>
-							</div>
-						</div>
-						<h3>Shaders</h3>
-						<div class="progressBar">
-							<div class="progressBarBG">
-								<div class="shadersBar"></div>
-							</div>
-						</div>
-						<div class="contentBox">
-							<h2>Programming languages</h2>
-						</div>
+		<!------------ EXPERIENCE SECTION -------------->
+		<section id="experience">
+			<h1>Work experience and education timeline</h1>
+			
+			<div class="timeline">
+				<div class="timelineContainer left-container">
+					<i class="fas fa-briefcase"></i>
+					<div class="timelineStep">
+						<h1>Software developer</h1>
+						<h2>CAPP, Milan (MI)</h2>
+						<small>07/2022 - TODAY</small>
+						<p>Developed SCADA systems, created simulations and technical specifications.</p>
+						<p>Worked on site to supervise machine commissioning.</p>
+						<p>Developed internal tools to organize projects.</p>
+						<span class="left-container-arrow"></span>
 					</div>
 				</div>
+
+				<div class="timelineContainer right-container">
+					<i class="fas fa-briefcase"></i>
+					<div class="timelineStep">
+						<h1>Production and TPM assistant</h1>
+						<h2>Owens Corning, Besana Brianza (MB)</h2>
+						<small>08/2021 - 07/2022</small>
+						<p>Defined TMP and continuous improvement goals.</p>
+						<p>Created standard operative procedures</p>
+						<p>Developed tools for automating office work</p>
+						<span class="right-container-arrow"></span>
+					</div>
+				</div>
+				
+				<div class="timelineContainer left-container">
+					<i class="fas fa-graduation-cap"></i>
+					<div class="timelineStep">
+						<h1>Automation engineering</h1>
+						<h2>Polytechnic of Milan, Milan (MI)</h2>
+						<small>10/2017 - 07/2021</small>
+						<p>Courses of automation engineering.</p>
+						<span class="left-container-arrow"></span>
+					</div>
+				</div>
+
+				<div class="timelineContainer right-container">
+					<i class="fas fa-graduation-cap"></i>
+					<div class="timelineStep">
+						<h1>Information technologies</h1>
+						<h2>ITIS P. Hensemberger, Monza (MB)</h2>
+						<small>09/2014 - 06/2017</small>
+						<p>Diploma in information technologies.</p>
+						<span class="right-container-arrow"></span>
+					</div>
+				</div>	
+
+				<div class="timelineContainer">
+					<i class="fas fa-star"></i>
+					<div class="timelineStart"></div>
+				</div>	
 			</div>
+
+			<div class="horizontal-container" style="margin-top: 1rem; gap: 2rem;">
+				<a href="#skills" class="navButton"><span>Skills</span></a>
+				<a href="./Files/CV 2025.pdf" class="cvButton" target="_blank"><span><i class="far fa-file-pdf"></i> Full résumé</span></a>
+			</div>	
+	
 		</section>
 		
+		<!------------ SKILLS SECTION -------------->
+		<section id="skills">
+			<h1>Skills</h1>
+			<h2>Programming</h2>
+			<div class="card-container">
+
+				<div class="card">
+					<i class="fas fa-cogs"></i>
+					<h3>Settings</h3>
+					<p>Customize your preferences easily.</p>
+				</div>
+
+				<div class="card">
+					<i class="fas fa-chart-line"></i>
+					<h3>Analytics</h3>
+					<p>View your performance in real-time.</p>
+				</div>
+
+				<div class="card">
+					<i class="fas fa-lock"></i>
+					<h3>Security</h3>
+					<p>Keep your data safe and private.</p>
+				</div>
+				
+				<div class="card">
+					<i class="fas fa-lock"></i>
+					<h3>Security</h3>
+					<p>Keep your data safe and private.</p>
+				</div>
+				
+				<div class="card">
+					<i class="fas fa-lock"></i>
+					<h3>Security</h3>
+					<p>Keep your data safe and private.</p>
+				</div>
+
+			</div>
+
+			<a href="#projects" class="navButton"><span>Projects</span></a>
+		</section>
+
+
 		<!-- Projects section -->
-		<section class="projects" id="projects">
+		<section id="projects">
 			<div class="heading">
 				<h2>Projects:</h2>
 				<p>

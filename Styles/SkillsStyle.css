@@ -1,0 +1,38 @@
+.card-container {
+    display: flex;
+    gap: 1.5rem; /* space between cards */
+    flex-wrap: wrap; /* wrap on small screens */
+    justify-content: center; /* center horizontally */
+    padding: 2rem;
+}
+  
+.card {
+    background: var(--bodyColor_Foreground);
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+  
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px var(--themeColor_2);
+}
+  
+  .card i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--themeColor_1);
+}
+  
+.card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+  
+.card p {
+    font-size: 1rem;
+    color: var(--textColor_Muted);
+}
