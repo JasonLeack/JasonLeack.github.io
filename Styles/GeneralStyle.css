@@ -3,7 +3,7 @@
 :root
 {	
 	--bodyColor_Background: #f1f1f1;
-	--bodyColor_Middleground: #F8F8F8;
+	--bodyColor_Middleground: #d6d6d6;
 	--bodyColor_Foreground: #FFFFFF;
 	--footerColor: #464646;
 	
@@ -81,6 +81,7 @@ h1{
 }
 
 h2{
+	margin-top: 2rem;
 	color: var(--themeColor_2);
 	font-size: var(--titleSize_Default);
 }
@@ -170,33 +171,13 @@ small{
 	align-items: center;
 }
 
-#home h2
-{
-	font-size: 3em;
-	color: var(--regularTextColor);
-	font-weight: 500;
-	line-height: 1.5em;
-}
-.home h2 span
-{
-	font-size: 1.5em;
-	font-weight: 700;
-}
-.home h3
-{
-	font-size: 1.5em;
-	color: var(--regularTextColor);
-	font-weight: 500;
-	line-height: 1.5em;
-}
 
-
-/* -- Contacts --- */
+/* --- Contacts --- */
 #contacts{
 	height: 100vh;
 }
 
-
+/* --- Footer ---*/
 
 footer{
 	background-color: var(--footerColor);
@@ -214,14 +195,15 @@ footer p, footer small{
 
 footer a{
 	position: absolute;
-	left: 50%;
+	left: calc(50% - 2rem);
 	bottom: 65%;
 
+	width: 4rem;
 	background: var(--themeColor_1);
 	color: var(--textColor_Light);
 	padding: 0.5rem 1rem;
 	text-decoration: none;
-
+	text-align: center;
 	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 	
 	transition: 0.3s;

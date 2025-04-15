@@ -1,0 +1,72 @@
+.projectContainer{
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.projectCard {
+    width: 28rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    background: var(--bodyColor_Foreground);
+    transition: transform 0.3s;
+  }
+  
+  .projectCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.25rem 0.6rem var(--themeColor_2);
+  }
+  
+  .projectCard img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+.cardDivider {
+    border: none;
+    border-top: 0.2rem solid var(--themeColor_1);
+    margin: 0;
+}
+
+  .cardContent {
+    padding: 1rem;
+  }
+  
+  .cardContent h3 {
+    margin: 0 0 0.5rem;
+    font-size: var(--textSize_Big);
+    color: var(--themeColor_2);
+  }
+  
+  .cardContent p {
+    font-size: var(--textSize_Default);
+    margin-bottom: 1rem;
+  }
+  
+  .techButtons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+.tech {
+    background: var(--bodyColor_Middleground);
+    color: var(--textColor_Primary);
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.5rem;
+    font-size: var(--textSize_Small);
+    box-shadow: 0 0.25rem 0.6rem rgba(0, 0, 0, 0.1);
+}
+
+.tech i{
+    margin-right: 0.4rem;
+}
+  .tech:hover{
+    background: var(--themeColor_2);
+    color: var(--textColor_Light);
+    box-shadow: 0 0.25rem 0.6rem var(--themeColor_2);
+  }

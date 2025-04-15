@@ -1,8 +1,8 @@
 .cardContainer {
     display: flex;
-    gap: 1.5rem; /* space between cards */
-    flex-wrap: wrap; /* wrap on small screens */
-    justify-content: center; /* center horizontally */
+    gap: 1.5rem; 
+    flex-wrap: wrap; 
+    justify-content: center; 
     padding: 2rem;
 }
   
