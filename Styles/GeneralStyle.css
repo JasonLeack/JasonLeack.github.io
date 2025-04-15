@@ -28,8 +28,8 @@
 .darkTheme
 {
 	--bodyColor_Background: #1D1D1D;
-	--bodyColor_Middleground: #3D3D3D;
-	--bodyColor_Foreground: #AAAAAA;
+	--bodyColor_Middleground: #505050;
+	--bodyColor_Foreground: #303030;
 	--footerColor: #b6b6b6;
 	
 	--textColor_Primary: #F1F1F1;
@@ -81,7 +81,6 @@ h1{
 }
 
 h2{
-	margin-top: 2rem;
 	color: var(--themeColor_2);
 	font-size: var(--titleSize_Default);
 }
@@ -119,6 +118,10 @@ small{
 	display: flex;
 	flex-direction: column;
 	min-width: 50%;
+}
+
+.subcategoryTitle{
+	margin-top: 2rem;
 }
 
 /* --- Header --- */

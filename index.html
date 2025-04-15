@@ -16,7 +16,7 @@
 		<link rel="styleSheet" href="./Styles/SkillsStyle.css">
 		<link rel="styleSheet" href="./Styles/ProjectsStyle.css">
 		<link rel="styleSheet" href="./Styles/ContactsStyle.css">
-		<link rel="stylesheet" href="./Styles/ThemeSwitchStyle.css">
+		<link rel="stylesheet" href="./Styles/ThemeToggleStyle.css">
 		
 		<!-- Font Awesome -->
 		<script src="https://kit.fontawesome.com/30dfced7aa.js" crossorigin="anonymous"></script>
@@ -39,6 +39,8 @@
 		<!-- Favicon - iOS -->
 		<link rel="apple-touch-icon" href="./Assets/T_Icon_B_32x32.png" sizes="32x32">
 		<link rel="apple-touch-icon" href="./Assets/T_Icon_B_256x256.png" sizes="256x256">	
+
+		<script src="./Scripts/ThemeChange.js"></script>
 	</head>
 	
 	<!-- Body -->
@@ -73,7 +75,7 @@
 		<!-- NOTE: TO BE MODIFIED! -->
 		<div class="themeButton">
 			<label class="switch">
-				<input type="checkbox" checked id="themeCheckbox" onclick="switchTheme()">
+				<input type="checkbox" checked id="themeCheckbox" onclick="switchTheme(this)">
 				<span class="slider round"><i class="far fa-sun"></i><i class="far fa-moon"></i></span>
 			</label>
 		</div>
@@ -179,7 +181,7 @@
 		<!------------ SKILLS SECTION -------------->
 		<section id="skills">
 			<h1>Skills</h1>
-			<h2>Programming languages</h2>
+			<h2 class="subcategoryTitle">Programming languages</h2>
 			<div class="cardContainer">
 
 				<div class="card">
@@ -212,7 +214,7 @@
 
 			</div>
 
-			<h2>Web developement</h2>
+			<h2 class="subcategoryTitle">Web developement</h2>
 			<div class="cardContainer">
 				
 				<div class="card">
@@ -244,7 +246,7 @@
 
 			</div>
 
-			<h2>Databases</h2>
+			<h2 class="subcategoryTitle">Databases</h2>
 			<div class="cardContainer">
 				
 				<div class="card">
@@ -267,7 +269,7 @@
 
 			</div>
 
-			<h2>Tools</h2>
+			<h2 class="subcategoryTitle">Tools</h2>
 			<div class="cardContainer">
 				
 				<div class="card">
@@ -304,7 +306,7 @@
 			<h1>Projects</h1>
 			
 			<!----- Professional works ----->
-			<h2>Professional works</h2>
+			<h2 class="subcategoryTitle">Professional works</h2>
 
 			<div class="projectContainer">
 
@@ -380,7 +382,7 @@
 			</div>
 
 			<!----- Peronal projects ----->
-			<h2>Personal projects</h2>
+			<h2 class="subcategoryTitle">Personal projects</h2>
 
 			<div class="projectContainer">
 
