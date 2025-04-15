@@ -5,6 +5,7 @@
 	--bodyColor_Background: #f1f1f1;
 	--bodyColor_Middleground: #F8F8F8;
 	--bodyColor_Foreground: #FFFFFF;
+	--footerColor: #464646;
 	
 	--textColor_Primary: #252525;
 	--textColor_Secondary: #595959;
@@ -29,6 +30,7 @@
 	--bodyColor_Background: #1D1D1D;
 	--bodyColor_Middleground: #3D3D3D;
 	--bodyColor_Foreground: #AAAAAA;
+	--footerColor: #b6b6b6;
 	
 	--textColor_Primary: #F1F1F1;
 	--textColor_Secondary: #bfbfbf;
@@ -196,38 +198,39 @@ small{
 
 
 
-footer
-{
-	background-color: #000000;
+footer{
+	background-color: var(--footerColor);
 	width: 100%;
-	height: 100%;
+	height: auto;
 	
-	padding: 15px 25px;
+	position: relative;
+
+	padding: 0.3rem;
+}
+
+footer p, footer small{
+	color: var(--textColor_Light);
+}
+
+footer a{
+	position: absolute;
+	left: 50%;
+	bottom: 65%;
+
+	background: var(--themeColor_1);
+	color: var(--textColor_Light);
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+
+	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 	
-	color: #FFFFFF;
+	transition: 0.3s;
+}
+
+footer a:hover{
+	transform: translateY(-5px);
+	color: var(--themeColor_2);
 }
 
 
 
-.themeButton
-{
-	position: fixed;
-	bottom: 2%;
-	right: 0.5%;
-	z-index: 100000;
-	
-	animation-duration: 1s;
-    animation-timing-function: ease;
-    animation-name: popOut;
-}
-.themeButton :hover
-{
-	color: var(--themeColor);
-}
-.themeButton label span i
-{
-	padding: 7px 0px 4px 6px;
-	
-	color: #D1D1D1;
-	font-size: 1.3em;
-}

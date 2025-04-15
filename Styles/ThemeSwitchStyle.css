@@ -1,3 +1,26 @@
+.themeButton
+{
+	position: fixed;
+	bottom: 2%;
+	right: 0.5%;
+	z-index: 100000;
+	
+	animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-name: popOut;
+}
+.themeButton :hover
+{
+	color: var(--themeColor);
+}
+.themeButton label span i
+{
+	padding: 7px 0px 4px 6px;
+	
+	color: #D1D1D1;
+	font-size: 1.3em;
+}
+
 .switch 
 {
   position: relative;
