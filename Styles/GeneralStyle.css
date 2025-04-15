@@ -106,10 +106,16 @@ small{
 	align-items: flex-start;
 }
 
-.vertical-containe{
+.vertical-container{
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+}
+
+.halfDiv{
+	display: flex;
+	flex-direction: column;
+	min-width: 50%;
 }
 
 /* --- Header --- */
@@ -277,10 +283,7 @@ footer
 	margin-bottom: 10px;
 }
 
-.halfDiv
-{
-	min-width: 50%;
-}
+
 
 .standardImage
 {
