@@ -3,7 +3,7 @@
     margin: 2rem;
     padding: 1.5rem;
     border-radius: 0.75rem;
-    box-shadow: 0 0.25rem 0.6rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.25rem 0.6rem var(--shadowColor);
     width: 30rem;
     height: auto;
     display: flex;
@@ -17,7 +17,7 @@
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
-    box-shadow: 0 0.25rem 0.6rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.25rem 0.6rem var(--shadowColor);
 }
 
 .contactCard h1{
@@ -61,7 +61,7 @@
     border-radius: 1.5rem;
     background-color: var(--bodyColor_Foreground);
     text-decoration: none;
-    box-shadow: 0 0.25rem 0.6rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.25rem 0.6rem var(--shadowColor);
 }
 
 .contactButton i{

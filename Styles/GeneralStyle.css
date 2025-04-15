@@ -14,6 +14,8 @@
 	--themeColor_1: #1c3244;
 	--themeColor_2: #f2ba45;
 
+	--shadowColor:#00000020;
+
 	--textSize_Small: clamp(0.8rem, 1.6vw, 1.2rem);
 	--textSize_Default: clamp(1rem, 2vw, 1.5rem);
 	--textSize_Big: clamp(1.2rem, 2.4vw, 1.8rem);
@@ -30,14 +32,16 @@
 	--bodyColor_Background: #1D1D1D;
 	--bodyColor_Middleground: #505050;
 	--bodyColor_Foreground: #303030;
-	--footerColor: #b6b6b6;
+	--footerColor: #505050;
 	
 	--textColor_Primary: #F1F1F1;
 	--textColor_Secondary: #bfbfbf;
 	--textColor_Light: #F0F0F0;
 	
-	--themeColor_1: #1c3244;
-	--themeColor_2: #f2ba45;
+	--themeColor_1: #376285;
+	--themeColor_2: #eda60d;
+
+	--shadowColor:#00000098;
 }
 
 /* --- STYLES -------------------------------------------------------------------------------------------- */

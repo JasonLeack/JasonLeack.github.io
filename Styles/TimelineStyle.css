@@ -93,7 +93,7 @@
     background: var(--bodyColor_Foreground);
     position: relative;
     border-radius: 0.5rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px var(--shadowColor);
 }
 
 .timelineStep:hover{

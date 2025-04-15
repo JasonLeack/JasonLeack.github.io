@@ -10,7 +10,7 @@
     width: 28rem;
     border-radius: 1rem;
     overflow: hidden;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 16px var(--shadowColor);
     background: var(--bodyColor_Foreground);
     transition: transform 0.3s;
   }
@@ -59,7 +59,7 @@
     padding: 0.3rem 0.7rem;
     border-radius: 0.5rem;
     font-size: var(--textSize_Small);
-    box-shadow: 0 0.25rem 0.6rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.25rem 0.6rem var(--shadowColor);
 }
 
 .tech i{
