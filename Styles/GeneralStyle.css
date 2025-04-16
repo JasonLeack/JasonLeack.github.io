@@ -165,7 +165,7 @@ small{
 	gap: 1.2rem;
 }
 
-#navigationOption {
+#navigationOptions {
 	display: none;
 	font-size: var(--textSize_Big);
 	color: var(--textColor_Light);
@@ -244,7 +244,7 @@ footer a:hover{
 		padding: 3rem 1rem 1.5rem 1rem;
 	}
 
-	#navigationOption {
+	#navigationOptions {
 		display: block;
 	}
 
@@ -257,8 +257,8 @@ footer a:hover{
 		top: 3.5rem;
 		right: 1rem;
 		border-radius: 0.5rem;
-		box-shadow: 0 0 10px var(--shadowColor);
-	  }
+		box-shadow: 0 0 10px var(--shadowColor_Dark);
+	}
 
 	#navigation.show {
 		display: flex;
@@ -266,7 +266,7 @@ footer a:hover{
 
 	.navigationButton{
 		color: var(--textColor_Primary);
-		font-size: bolder;
+		font-size: bold;
 	}
 
 	.paragraph{
