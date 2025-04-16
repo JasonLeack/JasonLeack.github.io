@@ -28,7 +28,7 @@
   
 .cardDivider {
     border: none;
-    border-top: 0.2rem solid var(--themeColor_1);
+    border-top: 0.2rem solid var(--themeColor_2);
     margin: 0;
 }
 
@@ -39,7 +39,7 @@
   .cardContent h3 {
     margin: 0 0 0.5rem;
     font-size: var(--textSize_Big);
-    color: var(--themeColor_2);
+    color: var(--themeColor_1);
   }
   
   .cardContent p {

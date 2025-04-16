@@ -1,89 +1,68 @@
 
-.themeButton
-{
-	position: fixed;
-	bottom: 2%;
-	right: 0.5%;
-	z-index: 100000;
-	
-	animation-duration: 1s;
+:root{
+    --thumbRadius: 1.9rem;
+    --rangeHeight: 2.3rem;
+    --rangeWidth: 4rem;
+}
+
+.themeButton{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 100000;
+
+    animation-duration: 1s;
     animation-timing-function: ease;
     animation-name: popOut;
-}
-.themeButton :hover
-{
-	color: var(--themeColor);
-}
-.themeButton label span i
-{
-	padding: 7px 0px 4px 6px;
-	
-	color: #D1D1D1;
-	font-size: 1.3em;
+
 }
 
-.switch 
-{
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
+.switch{
+    position: relative;
+    display: inline-block;
+    width: var(--rangeWidth);
+    height: var(--rangeHeight);
 }
 
-.switch input 
-{ 
-  opacity: 0;
-  width: 0;
-  height: 0;
+.switch input{ 
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
-.slider 
-{
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #090909;	/*Background when unchecked*/
-  -webkit-transition: .4s;
-  transition: .4s;
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    border-radius: var(--rangeHeight);
+
+    background-color: var(--themeColor_1);	
+
+    box-shadow: 0 0.25rem 0.6rem var(--shadowColor);
+    transition: .4s;
 }
 
-.slider:before 
-{
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: #363636;	/*Switch when unchecked*/
-  -webkit-transition: .4s;
-  transition: .4s;
+/* Thumb */
+.slider:before {
+    content: '';
+    
+    position: absolute;
+    height: var(--thumbRadius);
+    width: var(--thumbRadius);
+    left: calc((var(--rangeHeight) - var(--thumbRadius)) / 2);
+    top: calc((var(--rangeHeight) - var(--thumbRadius)) / 2);
+    
+    background-color: var(--bodyColor_Foreground);
+    border-radius: 50%;
+
+    transition: 0.4s;
 }
 
-input:checked + .slider 
-{
-  background-color: #436060;	/*Background when checked*/
+/* Thumb when checked*/
+input:checked + .slider:before {
+    transform: translateX(calc(var(--rangeWidth) - var(--rangeHeight)));
 }
-
-input:checked + .slider:before 
-{
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-  background-color: #D1D1D1;	/*Switch when checked*/
-}
-
-/* Rounded sliders */
-.slider.round 
-{
-  border-radius: 40px;
-}
-
-.slider.round:before 
-{
-  border-radius: 50%;
-}
-

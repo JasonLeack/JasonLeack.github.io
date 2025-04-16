@@ -14,7 +14,7 @@
 	--themeColor_1: #1c3244;
 	--themeColor_2: #f2ba45;
 
-	--shadowColor:#00000020;
+	--shadowColor:#0000002B;
 
 	--textSize_Small: clamp(0.8rem, 1.6vw, 1.2rem);
 	--textSize_Default: clamp(1rem, 2vw, 1.5rem);
@@ -27,8 +27,7 @@
 
 /* Dark theme colors */
 
-.darkTheme
-{
+.darkTheme{
 	--bodyColor_Background: #1D1D1D;
 	--bodyColor_Middleground: #505050;
 	--bodyColor_Foreground: #303030;
