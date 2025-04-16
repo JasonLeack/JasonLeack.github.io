@@ -172,6 +172,11 @@ small{
 	cursor: pointer;
 }
 
+#navigationOptions:hover{
+	color: var(--themeColor_2);
+	transition: 0.1s;
+}
+
 .navigationButton{
 	color: var(--textColor_Light);
 	text-decoration: none;
