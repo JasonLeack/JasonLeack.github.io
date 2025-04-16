@@ -14,7 +14,8 @@
 	--themeColor_1: #1c3244;
 	--themeColor_2: #f2ba45;
 
-	--shadowColor:#0000002B;
+	--shadowColor:#00000035;
+	--shadowColor_Dark:#00000080;
 
 	--textSize_Small: clamp(0.8rem, 1.6vw, 1.2rem);
 	--textSize_Default: clamp(1rem, 2vw, 1.5rem);
@@ -41,6 +42,7 @@
 	--themeColor_2: #eda60d;
 
 	--shadowColor:#00000098;
+	--shadowColor_Dark: #000000cc;
 }
 
 /* --- STYLES -------------------------------------------------------------------------------------------- */
@@ -54,7 +56,6 @@
 	scroll-behavior: smooth;
 }
 
-
 body{
 	background-color: var(--bodyColor_Background);
 }
@@ -66,7 +67,7 @@ header{
 	padding: 0.7rem;
 	width: 100%;
 
-	box-shadow: 0 5px 10px rgba(0,0,0, 0.5);
+	box-shadow: 0 5px 10px var(--shadowColor_Dark);
 }
 
 header h1{
@@ -216,6 +217,7 @@ footer p, footer small{
 	color: var(--textColor_Light);
 }
 
+/* Back to top button */
 footer a{
 	position: absolute;
 	left: calc(50% - 2rem);
@@ -227,7 +229,7 @@ footer a{
 	padding: 0.5rem 1rem;
 	text-decoration: none;
 	text-align: center;
-	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+	box-shadow: 0 2px 5px var(--shadowColor_Dark);
 	
 	transition: 0.3s;
 }
