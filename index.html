@@ -35,9 +35,8 @@
 		<link rel="icon" type="image/svg+xml" href="./Favicon/favicon.svg" />
 		<link rel="shortcut icon" href="./Favicon/favicon.ico" />
 		<link rel="apple-touch-icon" sizes="180x180" href="./Favicon/apple-touch-icon.png" />
-		<link rel="manifest" href="./Favicon/site.webmanifest" />
 
-
+		<script src="./Scripts/Main.js"></script>
 		<script src="./Scripts/ThemeChange.js"></script>
 	</head>
 	
@@ -57,6 +56,7 @@
 			
 			<!-- Navigation -->
 			<nav>
+				<div id="navigationOption" onclick="toggleNavMenu()">☰</div>
 				<ul id="navigation">
 					<!--NavLinks --> 
 					<li><a href="#home" class="navigationButton">Home</a></li>
@@ -70,7 +70,6 @@
 		
 		
 		<!-------------- Theme button --------------> 
-		<!-- NOTE: TO BE MODIFIED! -->
 		<div class="themeButton">
 			<label class="switch">
 				<input type="checkbox" checked id="themeCheckbox" onclick="toggleTheme(this)">
@@ -81,7 +80,7 @@
 		
 		<!------------ HOME SECTION -------------->
 		<section id="home">
-			<div class="halfDiv">
+			<div class="paragraph">
 				<p style="font-size: var(--titleSize_Big);">Hello, I'm <span style="color: var(--themeColor_2)">Riccardo</span>.</p>
 				<p style="font-size: var(--titleSize_Default);">I'm a software developer.</p>
 				<div style="margin: 1rem;"> </div>
@@ -96,7 +95,7 @@
 				<a href="#experience" class="navButton"><span>Experience</span></a>
 
 			</div>		
-			<div class="halfDiv" style="justify-content: center; align-items: center;">	
+			<div class="decoration" style="justify-content: center; align-items: center;">	
 				<!-- ORBITS -->
 				<div class="orbitsContainer">
 					<div class="core"></div>

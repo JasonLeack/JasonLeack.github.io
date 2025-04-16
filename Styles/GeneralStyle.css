@@ -54,6 +54,11 @@
 	scroll-behavior: smooth;
 }
 
+
+body{
+	background-color: var(--bodyColor_Background);
+}
+
 header{
 	background: var(--themeColor_1);
 	z-index: 1000000;
@@ -75,7 +80,6 @@ section{
 	align-items: center;
 	padding: 4rem 7rem 2rem 7rem;
 	height: auto;
-	background-color: var(--bodyColor_Background);
 }
 
 h1{
@@ -117,10 +121,16 @@ small{
 	align-items: flex-start;
 }
 
-.halfDiv{
+.paragraph{
 	display: flex;
 	flex-direction: column;
-	min-width: 50%;
+	width: 50%;
+}
+
+.decoration{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
 }
 
 .subcategoryTitle{
@@ -154,10 +164,17 @@ small{
 	gap: 1.2rem;
 }
 
+#navigationOption {
+	display: none;
+	font-size: var(--textSize_Big);
+	color: var(--textColor_Light);
+	cursor: pointer;
+}
+
 .navigationButton{
 	color: var(--textColor_Light);
 	text-decoration: none;
-	font-size:var(--textSize_Big);
+	font-size: var(--textSize_Big);
 	transition: 0.1s;
 	font-weight: 500;
 }
@@ -220,5 +237,52 @@ footer a:hover{
 	color: var(--themeColor_2);
 }
 
+@media (max-width: 1000px) {
+	section {
+		padding: 3rem 1rem 1.5rem 1rem;
+	}
 
+	#navigationOption {
+		display: block;
+	}
 
+	#navigation {
+		display: none;
+		flex-direction: column;
+		background: var(--bodyColor_Middleground);
+		padding: 1rem;
+		position: absolute;
+		top: 3.5rem;
+		right: 1rem;
+		border-radius: 0.5rem;
+		box-shadow: 0 0 10px var(--shadowColor);
+	  }
+
+	#navigation.show {
+		display: flex;
+	}
+
+	.navigationButton{
+		color: var(--textColor_Primary);
+		font-size: bolder;
+	}
+
+	.paragraph{
+		width: 70%;
+	}
+
+	.decoration{
+		width: 30%;
+	}
+}
+
+@media (max-width: 650px) {
+	.paragraph{
+		width: 100%;
+	}
+
+	.decoration{
+		width: 0%;
+		display: none;
+	}
+}

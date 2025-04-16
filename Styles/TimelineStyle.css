@@ -27,16 +27,19 @@
 
 /* Container */
 .timelineContainer{
-    padding: 0.6rem calc(var(--stepSize)/2 + var(--arrowSize) + var(--lineThickness));   /* Space between stemps | Space from central timeline */
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
     position: relative;
     width: 50%;
 }
 
 .left-container{
+    padding-right: calc(var(--stepSize)/2 + var(--arrowSize) + var(--lineThickness));   /* Space from central timeline */
     left: 0;
 }
 
 .right-container{
+    padding-left: calc(var(--stepSize)/2 + var(--arrowSize) + var(--lineThickness));   /* Space from central timeline */
     left: 50%;
 }
 
@@ -67,7 +70,7 @@
     height: 0;
     width: 0;
     position: absolute;
-    top: calc(var(--stepOffset)/2 + var(--stepSize)/2);
+    top: calc(var(--stepOffset) + var(--arrowSize)/2);
     z-index: 1;
     border-top: var(--arrowSize) solid transparent;
     border-bottom: var(--arrowSize) solid transparent;
@@ -79,7 +82,7 @@
     height: 0;
     width: 0;
     position: absolute;
-    top: calc(var(--stepOffset)/2 + var(--stepSize)/2);
+    top: calc(var(--stepOffset) + var(--arrowSize)/2);
     z-index: 1;
     border-top: var(--arrowSize) solid transparent;
     border-bottom: var(--arrowSize) solid transparent;
@@ -124,6 +127,10 @@
 }
 
 @media screen and (max-width: 1000px){
+    :root{
+        --stepOffset: 1rem;
+    }
+    
     .timeline::after{
         left: calc(var(--stepSize)/2);
     }
@@ -131,7 +138,7 @@
     .timelineContainer{
         width: 100%;
         padding-left: calc(var(--stepSize) + var(--lineThickness) + var(--arrowSize));
-        padding-right: 25px;
+        padding-right: 0;
     }
     .timelineContainer i{
         left: 0;

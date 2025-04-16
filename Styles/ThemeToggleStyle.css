@@ -1,6 +1,6 @@
 
 :root{
-    --thumbRadius: 1.9rem;
+    --thumbRadius: 1.8rem;
     --rangeHeight: 2.3rem;
     --rangeWidth: 4rem;
 }
@@ -10,11 +10,6 @@
     bottom: 1rem;
     right: 1rem;
     z-index: 100000;
-
-    animation-duration: 1s;
-    animation-timing-function: ease;
-    animation-name: popOut;
-
 }
 
 .switch{

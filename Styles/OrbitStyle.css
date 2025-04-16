@@ -1,4 +1,75 @@
+:root{
+    --maxOrbitSize: clamp(7rem, 20vw, 15rem);
+    --maxLineSize: clamp(0.2rem, 0.4vw, 0.3rem);
+}
+
+.orbitsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
   
+  
+.core{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(var(--maxOrbitSize) * 0.08);
+    height: calc(var(--maxOrbitSize) * 0.08);
+    border-radius: 50%;
+    background-color: var(--bodyColor_Foreground);
+}
+  
+.orbit {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.coreOrbit {
+    width: calc(var(--maxOrbitSize) * 0.35);
+    height: calc(var(--maxOrbitSize) * 0.35);
+    border: calc(var(--maxLineSize) * 0.6) solid var(--themeColor_2);
+}
+
+.core1 {
+    animation: spin3D_Core1 10s linear 0s infinite;
+}
+  
+.core2 {
+    animation: spin3D_Core2 10s linear 0s infinite;
+}
+  
+.core3 {
+    animation: spin3D_Core3 10s linear 0s infinite;
+}
+
+.outerOrbit1 {
+    width: var(--maxOrbitSize);
+    height: var(--maxOrbitSize);
+    border: var(--maxLineSize) solid var(--themeColor_1);
+    animation: spin3D 3s linear .2s infinite;
+}
+  
+.outerOrbit2 {
+    width: calc(var(--maxOrbitSize) * 0.8);
+    height: calc(var(--maxOrbitSize) * 0.8);
+    border: calc(var(--maxLineSize) * 0.8) solid var(--themeColor_1);
+    animation: spin3D 2s linear 0s infinite;
+}
+  
+.outerOrbit3 {
+    width: calc(var(--maxOrbitSize) * 0.6);
+    height: calc(var(--maxOrbitSize) * 0.6);
+    border: calc(var(--maxLineSize) * 0.6) solid var(--themeColor_1);
+    animation: spin3D 1s linear 0s infinite;
+}
+  
+
 @keyframes spin3D {
     from {transform: rotate3d(.5,.5,.5, 360deg);}
     to{transform: rotate3d(0deg);}
@@ -18,73 +89,3 @@
     from {transform: rotate3d(0.5, 1, 2, 240deg);}
     to {transform: rotate3d(0.5, 1, 2, 600deg);}
 }
-
-.orbitsContainer{
-    width: 300px;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-}
-  
-  
-.core{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    background-color: var(--bodyColor_Foreground);
-}
-  
-.orbit {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-}
-
-.coreOrbit {
-    width: 5rem;
-    height: 5rem;
-    border: 0.2rem solid var(--themeColor_2);
-}
-
-.core1 {
-    animation: spin3D_Core1 10s linear 0s infinite;
-}
-  
-.core2 {
-    animation: spin3D_Core2 10s linear 0s infinite;
-}
-  
-.core3 {
-    animation: spin3D_Core3 10s linear 0s infinite;
-}
-
-.outerOrbit1 {
-    width: 15rem;
-    height: 15rem;
-    border: 0.3rem solid var(--themeColor_1);
-    animation: spin3D 3s linear .2s infinite;
-}
-  
-.outerOrbit2 {
-    width: 12rem;
-    height: 12rem;
-    border: 0.25rem solid var(--themeColor_1);
-    animation: spin3D 2s linear 0s infinite;
-}
-  
-.outerOrbit3 {
-    width: 9rem;
-    height: 9rem;
-    border: 0.2rem solid var(--themeColor_1);
-    animation: spin3D 1s linear 0s infinite;
-}
-  
-

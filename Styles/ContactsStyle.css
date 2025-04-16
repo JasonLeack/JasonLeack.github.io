@@ -1,16 +1,17 @@
 .contactCard {
-    background: var(--bodyColor_Foreground);
-    margin: 2rem;
-    padding: 1.5rem;
-    border-radius: 0.75rem;
-    box-shadow: 0 0.25rem 0.6rem var(--shadowColor);
-    width: 30rem;
-    height: auto;
     display: flex;
     flex-direction: row;
     gap: 1rem;
 
-    transition: transform 0.3s, box-shadow 0.3s;
+    width: min(100%, 30rem);
+    height: auto;
+    
+    margin: 2rem;
+    padding: 1.5rem;
+
+    background: var(--bodyColor_Foreground);
+    border-radius: 0.75rem;
+    box-shadow: 0 0.25rem 0.6rem var(--shadowColor);
 }
   
 .contactCard img {
