@@ -183,11 +183,16 @@ small{
 	font-size: var(--textSize_Big);
 	transition: 0.1s;
 	font-weight: 500;
+	border-bottom: 0.2rem solid transparent;
 }
 
 .navigationButton:hover{
 	color: var(--themeColor_2);
 	transition: 0.1s;
+}
+
+.navigationButton.active{
+	border-bottom: 0.2rem solid var(--themeColor_2);
 }
 
 /* --- Home --- */
