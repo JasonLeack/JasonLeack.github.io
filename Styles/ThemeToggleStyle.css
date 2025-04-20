@@ -37,7 +37,7 @@
 
     background-color: var(--themeColor_1);	
 
-    box-shadow: 0 0.25rem 0.6rem var(--shadowColor);
+    box-shadow: 0 0.25rem 0.6rem var(--shadowColor_Dark);
     transition: .4s;
 }
 
